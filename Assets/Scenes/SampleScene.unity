@@ -172,7 +172,6 @@ GameObject:
   - component: {fileID: 146945470}
   - component: {fileID: 146945469}
   - component: {fileID: 146945468}
-  - component: {fileID: 146945471}
   m_Layer: 5
   m_Name: DamageButton
   m_TagString: Untagged
@@ -245,14 +244,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 146945471}
-        m_TargetAssemblyTypeName: DamageButton, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 1
+      - m_Target: {fileID: 289231539}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: ChangeHealth
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -295,19 +294,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146945466}
   m_CullTransparentMesh: 1
---- !u!114 &146945471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146945466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffce0b27c8d58c84899c796ae5645f83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: {fileID: 289231539}
 --- !u!1 &266729680
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +531,6 @@ GameObject:
   - component: {fileID: 368843351}
   - component: {fileID: 368843350}
   - component: {fileID: 368843349}
-  - component: {fileID: 368843352}
   m_Layer: 5
   m_Name: HealButton
   m_TagString: Untagged
@@ -618,14 +603,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 368843352}
-        m_TargetAssemblyTypeName: HealButton, Assembly-CSharp
-        m_MethodName: OnButtonClick
-        m_Mode: 1
+      - m_Target: {fileID: 289231539}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: ChangeHealth
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -668,19 +653,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368843347}
   m_CullTransparentMesh: 1
---- !u!114 &368843352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368843347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb28c0695a339ed4b9e6cd1f3e6341c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: {fileID: 289231539}
 --- !u!1 &373803310
 GameObject:
   m_ObjectHideFlags: 0

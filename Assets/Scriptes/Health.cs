@@ -3,11 +3,11 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    public event UnityAction OnHealthChanged;
-
     private readonly int _minHealth = 0;
     private readonly int _maxHealth = 100;
     private int _health;
+
+    public event UnityAction OnHealthChanged;
 
     public int HealthPoint => _health;
 
